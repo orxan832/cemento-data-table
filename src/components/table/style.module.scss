@@ -1,0 +1,43 @@
+.table {
+    @apply w-full border border-[#E0E0E0] rounded-[6px] overflow-x-auto relative;
+
+    table {
+        @apply w-full h-full;
+        border-spacing: 0;
+
+        thead {
+            @apply h-14 border-b border-[#E0E0E0] bg-[#F7F8F9] rounded-[6px];
+
+            tr {
+
+                th {
+                    @apply text-base font-semibold text-gray-600 px-3 min-w-[100px];
+
+                    &:first-child {
+                        border-top-left-radius: 6px;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                @apply h-14 border-b border-[#E0E0E0];
+                font-weight: 14px;
+                line-height: 22px;
+
+                &:last-child {
+                    @apply border-b-0;
+                }
+
+                td {
+                    @apply text-center px-3;
+                }
+            }
+        }
+    }
+}

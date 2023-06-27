@@ -1,0 +1,23 @@
+.modal {
+    @apply top-1/2 left-1/2 right-auto bottom-auto overflow-visible rounded-[10px] p-12 -mr-[50%] -translate-x-1/2 -translate-y-1/2 max-h-[97%] max-w-[97%] absolute border border-gray-300 bg-white outline-none flex flex-col min-w-[60%];
+}
+
+.modalOverlay {
+    @apply bg-black/50 z-[9999] fixed inset-0;
+}
+
+.header {
+    @apply flex items-center justify-between mb-7;
+
+    .title {
+        @apply text-2xl font-medium text-[#242E3D];
+    }
+
+    .icon {
+        @apply w-5 h-5 cursor-pointer;
+    }
+}
+
+.modalBody {
+    @apply overflow-y-auto py-1
+}

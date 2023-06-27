@@ -1,0 +1,11 @@
+.inputWrap {
+    @apply relative w-full;
+}
+
+.inputWrap .icon {
+    @apply absolute text-[24px] top-1/2 left-4 -translate-y-1/2 text-[#5F6368];
+}
+
+.inputWrap .input {
+    @apply pl-14 pr-4 py-3 border border-[#E0E0E0] w-full rounded-[10px] text-[14px] leading-[22px];
+}

@@ -1,0 +1,51 @@
+.radioButtons {
+    @apply border border-[#C7CFD6] rounded-md flex items-center gap-[1px] w-fit mx-auto;
+
+    .full {
+        @apply h-full w-full border-none;
+
+        label {
+            @apply w-1/2 m-0 rounded-none border-none outline outline-1 outline-transparent;
+
+            input {
+                &:checked {
+                    + {
+                        label.positive {
+                            @apply outline-[#5CA754];
+                        }
+                    }
+
+                    + {
+                        label.negative {
+                            @apply outline-[#EB5757];
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    input {
+        @apply hidden;
+
+        &:checked {
+            + {
+                label.positive {
+                    border-color: #5ca754 !important;
+                    color: #5ca754 !important;
+                }
+            }
+
+            + {
+                label.negative {
+                    border-color: #eb5757 !important;
+                    color: #eb5757 !important;
+                }
+            }
+        }
+    }
+
+    label {
+        @apply h-full text-[#C7CFD6] text-sm flex items-center justify-center cursor-pointer py-[5px] px-4 rounded-md -m-[1px] border border-transparent;
+    }
+}
